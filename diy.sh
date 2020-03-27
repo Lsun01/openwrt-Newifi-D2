@@ -15,4 +15,5 @@ git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 sudo apt-get install gcc-multilib g++-multilib
+find ./bin/targets/ -type d -name "packages" | xargs rm -rf {}
 
